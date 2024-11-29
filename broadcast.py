@@ -124,6 +124,11 @@ def main():
                     + str(e)
                 )
 
+    print("-----------------------")
+    print("[green]Broadcast complete[/green]")
+    print("-----------------------")
+    print("Message:\n" + template["message"])
+
 
 if __name__ == "__main__":
     main()
