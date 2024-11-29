@@ -1,3 +1,6 @@
 {
-    "name": "bluesky"
+    "name": "bluesky",
+    "pds_url": "https: //bsky.social",
+    "handle": "",
+    "password": ""
 }
