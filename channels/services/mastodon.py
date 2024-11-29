@@ -21,16 +21,14 @@ class Mastodon(Channel):
 
     def broadcast(self, message: str, media_list: set = None):
         if media_list is not None:
-            print(media_list)
+            # TODO: allow multiple media files
             media_path = media_list.pop()
 
-            print(f"- Sending media to Mastodon: {media_path}")
+            print(f"- Sending media")
             media_id = self.mastodon.media_post(media_file=media_path)
 
-            self.mastodon.status_post(
-                status="Automated test toot!", media_ids=[media_id]
-            )
+            self.mastodon.status_post(status=message, media_ids=[media_id])
         else:
-            self.mastodon.toot("Automated test toot w/o media!")
+            self.mastodon.toot(message)
 
         print(f"- Sent to Mastodon.")
