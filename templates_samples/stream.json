@@ -1,0 +1,17 @@
+{
+    "name": "stream-live",
+    "description": "Stream going-live announcement",
+    "channels": [
+        "config/mastodon.config.json",
+        "config/bluesky.config.json",
+        "config/facebook.config.json"
+    ],
+    "variables": {
+        "title": "My stream",
+        "url": "https://twitch.tv/mystream_name",
+        "game": "something!",
+        "extra": null
+    },
+    "media-path": "~/mypicture.jpg",
+    "message": "🔴 {{!title}} is now LIVE playing {{game}}!\n\n{{!url}}\n{{extra}}"
+}

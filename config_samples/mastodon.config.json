@@ -1,0 +1,5 @@
+{
+    "name": "mastodon",
+    "api_base_url": "https://YOUR_SERVER.NET",
+    "access_token": "AcCeSsToK3n"
+}
