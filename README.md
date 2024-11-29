@@ -25,7 +25,7 @@ Variables can be provided inside the template, or provided via the command line 
 
 ## Example usage
 
-`./broadcast.y templates/stream.json -o game="Blaster Master"`
+`./broadcast.py templates/stream.json -o game="Blaster Master"`
 
 
 ## Selfish-ware
