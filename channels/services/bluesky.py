@@ -24,8 +24,6 @@ def bsky_post(session: dict, pds_url: str, message: str, embed: dict) -> dict:
     if embed:
         post["embed"] = embed
 
-    print(post)
-
     resp = requests.post(
         pds_url + "/xrpc/com.atproto.repo.createRecord",
         headers={"Authorization": "Bearer " + session["accessJwt"]},
