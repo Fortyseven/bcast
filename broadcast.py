@@ -36,7 +36,7 @@ def get_var(kn: str, template, args: argparse.Namespace):
 
     if args.var:
         for var in args.var:
-            key, value = option.split("=")
+            key, value = var.split("=")
             if kn == key:
                 return value
 
@@ -57,7 +57,7 @@ def main():
 
     args = parser.parse_args()
 
-    # validate args.option entries are in the form of key=value
+    # validate args.var entries are in the form of key=value
     if args.var:
         for var in args.var:
             if "=" not in var:
